@@ -8,8 +8,9 @@ function refreshWeather(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "ef5c282521e544537bfb522d048f133f";
-  let apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q={Johannesburg},&limit={5}&appid={ef5c282521e544537bfb522d048f133f}' ;
+  let apiKey = "d1baa46482117a3ctb03af3f21704co4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${Johannesburg}&key=${d1baa46482117a3ctb03af3f21704co4}`;
+    
   axios.get(apiUrl).then(refreshWeather);
 }
 
